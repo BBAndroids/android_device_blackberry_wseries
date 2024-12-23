@@ -1,0 +1,123 @@
+# Audio
+af.fast_track_multiplier=1
+audio.deep_buffer.media=true
+audio.offload.pcm.16bit.enable=true
+audio.offload.pcm.24bit.enable=true
+audio.offload.video=true
+persist.audio.camcorder.stereo=true
+persist.vendor.audio.fluence.audiorec=true
+persist.vendor.audio.fluence.speaker=true
+persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicerec=true
+ro.vendor.audio.sdk.fluencetype=fluence
+vendor.audio.offload.buffer.size.kb=32
+vendor.audio.offload.gapless.enabled=true
+vendor.audio.offload.multiple.enabled=false
+
+ro.config.media_vol_steps=25
+ro.config.vc_call_vol_steps=7
+
+#ro.audio.flinger_standbytime_ms=300
+#vendor.audio_hal.period_size=192
+#vendor.voice.path.for.pcm.voip=false
+
+# Bluetooth
+bluetooth.enable_timeout_ms=12000
+ro.bluetooth.hfp.ver=1.6
+ro.bluetooth.alwaysbleon=true
+ro.bluetooth.dun=false
+ro.bluetooth.sap=false
+bluetooth.hfp.client=1
+
+# Camera
+persist.camera.cpp.duplication=false
+ro.qc.sdk.camera.facialproc=false
+ro.qc.sdk.gestures.camera=false
+
+# CNE
+persist.cne.feature=1
+
+# Dalvik heap
+dalvik.vm.heapstartsize=16m
+dalvik.vm.heapgrowthlimit=192m
+dalvik.vm.heapsize=512m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapminfree=2m
+dalvik.vm.heapmaxfree=8m
+
+# Dexopt
+dalvik.vm.boot-dex2oat-threads=4
+dalvik.vm.dex2oat-threads=2
+dalvik.vm.image-dex2oat-threads=4
+
+# Graphics
+debug.composition.type=c2d
+debug.egl.hw=1
+debug.hwui.use_buffer_age=false
+debug.sf.disable_backpressure=1
+debug.sf.hw=1
+debug.sf.latch_unsignaled=1
+persist.demo.hdmirotationlock=false
+persist.hwc.mdpcomp.enable=true
+ro.hdmi.enable=false
+ro.opengles.version=196608
+
+# GPS
+persist.gps.qc_nlp_in_use=0
+ro.gps.agps_provider=1
+
+# Media
+debug.mdpcomp.4k2kSplit=1
+debug.mdpcomp.logs=0
+media.aac_51_output_enabled=true
+media.stagefright.enable-player=true
+media.stagefright.enable-http=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-scan=true
+mmp.enable.3g2=true
+mm.enable.smoothstreaming=true
+media.aac_51_output_enabled=true
+#37491 is decimal sum of supported codecs in AAL
+#codecs: AVI AC3 ASF AAC QCP DTS 3G2 MP2TS
+mm.enable.qcom_parser=37491
+vidc.debug.level=1
+
+# Memory optimizations
+ro.vendor.qti.am.reschedule_service=true
+ro.vendor.qti.sys.fw.bservice_enable=true
+
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+
+# Recovery
+ro.recovery.skip_ev_not_direct_input=true
+
+# RIL
+ril.subscription.types=NV,RUIM
+rild.libargs=-d /dev/smd0
+rild.libpath=/vendor/lib/libril-qc-qmi-1.so
+
+persist.data.iwlan.enable=true
+persist.data.mode=concurrent
+persist.data.netmgrd.qos.enable=true
+
+persist.radio.apm_sim_not_pwdn=1
+persist.radio.data_no_toggle=1
+
+ro.data.large_tcp_window_size=true
+ro.use_data_netmgrd=true
+
+ro.telephony.call_ring.multiple=false
+ro.telephony.default_network=10
+telephony.lteOnCdmaDevice=1
+
+# Surfaceflinger
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+
+# Time services
+persist.timed.enable=true
+
+# WiFi
+wifi.interface=wlan0
